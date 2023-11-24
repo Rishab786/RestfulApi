@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AdminPage</title>
+    <title>Admin Page</title>
   </head>
   <body>
     <div id="container">
@@ -10,37 +11,37 @@
         <h1>Seller Page</h1>
         <label>
           Selling Price:
-          <input type="number" id="amt" />
+          <input type="number" id="price" />
         </label>
         <br />
         <label>
           Product Type:
-          <input type="text" id="desc" />
+          <input type="text" id="product" />
         </label>
         <br />
-       <label>
+        <label>
           Choose a Category:
           <select id="category">
             <option>Select Category</option>
-            <option>Electronic</option>
+            <option>Electronics</option>
             <option>Food</option>
             <option>SkinCare</option>
           </select>
         </label>
-        <button id="btn">Add Product</button>
-        <h2>Products:</h2>
-        <h3>Electronic Items:</h3>
-        <ul id="electronic"></ul>
-        <h3>SkinCare Items:</h3>
-        <ul id="skincare"></ul>
-        <h3>Food Items:</h3>
-        <ul id="food"></ul>
+        <button id="addBtn">Add Product</button>
       </form>
-      
+      <h2>Products:</h2>
+    </div>
+    <div>
+      <h3>Electronic Items:</h3>
+      <ol id="electronic"></ol>
+      <h3>SkinCare Items:</h3>
+      <ol id="skincare"></ol>
+      <h3>Food Items:</h3>
+      <ol id="food"></ol>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.1/axios.min.js"></script>
     <script src="index.js"></script>
-   
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </body>
 </html>
